@@ -13,7 +13,7 @@ struct SpaceObject: Codable {
     let explanation: String?
     let hdurl: String?
     let title: String?
-    
+
     init(objectsData: [String: Any]) {
         copyright = objectsData["copyright"] as? String
         date = objectsData["date"] as? String
@@ -21,13 +21,13 @@ struct SpaceObject: Codable {
         hdurl = objectsData["hdurl"] as? String
         title = objectsData["title"] as? String
     }
-    
+
     static func getSpaceObjects(from value: Any) -> [SpaceObject] {
-        var spaceObjects:[SpaceObject] = []
+        var spaceObjects: [SpaceObject] = []
         guard let objectsData = value as? [[String: Any]] else {
             return spaceObjects
         }
-        
+
         for objectData in objectsData {
             let spaceObject = SpaceObject(objectsData: objectData)
             spaceObjects.append(spaceObject)
