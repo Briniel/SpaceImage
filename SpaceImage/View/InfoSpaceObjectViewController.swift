@@ -8,7 +8,7 @@
 import UIKit
 
 class InfoSpaceObjectViewController: UIViewController {
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var imageView: UIImageView!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var loadDateLable: UILabel!
     
@@ -44,9 +44,8 @@ class InfoSpaceObjectViewController: UIViewController {
                     guard let value = value as? Data else {
                         return
                     }
-
-                    self.imageView.image = UIImage(data: value)
-                    self.context.saveImage(spaceObject, imageData: value)
+                    imageView.image = UIImage(data: value)
+                    context.saveImage(spaceObject, imageData: value)
                     spinner.stopAnimating()
                 case .failure(let error):
                     print(error)

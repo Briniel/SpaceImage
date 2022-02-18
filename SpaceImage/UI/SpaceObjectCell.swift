@@ -11,7 +11,7 @@ import UIKit
 
 class SpaceObjectCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
-    @IBOutlet weak var imageSpace: UIImageView!
+    @IBOutlet var imageSpace: UIImageView!
 
     private let context = StorageManager.shared
 
@@ -29,11 +29,11 @@ class SpaceObjectCell: UITableViewCell {
         NasaAPI.shared.getSpaceImage(url: url) { [unowned self] result in
             switch result {
                 case .success(let value):
-                guard let value = value as? Data else {
-                    return
-                }
-                    self.imageSpace.image = UIImage(data: value)
-                    self.context.saveImage(spaceObject, imageData: value)
+                    guard let value = value as? Data else {
+                        return
+                    }
+                    imageSpace.image = UIImage(data: value)
+                    context.saveImage(spaceObject, imageData: value)
                 case .failure(let error):
                     print(error)
             }
