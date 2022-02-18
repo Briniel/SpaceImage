@@ -3,29 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3E7858A727BF932D00A04B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7858A627BF932D00A04B25 /* AppDelegate.swift */; };
 		3E7858A927BF932D00A04B25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7858A827BF932D00A04B25 /* SceneDelegate.swift */; };
-		3E7858AB27BF932D00A04B25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7858AA27BF932D00A04B25 /* ViewController.swift */; };
 		3E7858AE27BF932D00A04B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7858AC27BF932D00A04B25 /* Main.storyboard */; };
-		3E7858B127BF932D00A04B25 /* SpaceImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E7858AF27BF932D00A04B25 /* SpaceImage.xcdatamodeld */; };
+		3E7858B127BF932D00A04B25 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E7858AF27BF932D00A04B25 /* CoreData.xcdatamodeld */; };
 		3E7858B327BF933900A04B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7858B227BF933900A04B25 /* Assets.xcassets */; };
 		3E7858B627BF933900A04B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7858B427BF933900A04B25 /* LaunchScreen.storyboard */; };
+		3E7858BF27BF93D700A04B25 /* NasaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7858BE27BF93D700A04B25 /* NasaAPI.swift */; };
+		3E7858C227BFB4CF00A04B25 /* SpaceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7858C127BFB4CF00A04B25 /* SpaceObject.swift */; };
+		3E7858C527BFB67D00A04B25 /* SpaceObjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7858C427BFB67D00A04B25 /* SpaceObjectCell.swift */; };
+		3E7858C827BFBF4800A04B25 /* SpaceObjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7858C727BFBF4800A04B25 /* SpaceObjectsTableViewController.swift */; };
+		3E7858CA27BFBF8500A04B25 /* InfoSpaceObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7858C927BFBF8500A04B25 /* InfoSpaceObjectViewController.swift */; };
+		3E7858CC27BFC42900A04B25 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7858CB27BFC42900A04B25 /* StorageManager.swift */; };
+		7111887E7004320D3053ADCD /* Pods_SpaceImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294C86E7A1F4A2569AB655AE /* Pods_SpaceImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		294C86E7A1F4A2569AB655AE /* Pods_SpaceImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7858A327BF932D00A04B25 /* SpaceImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7858A627BF932D00A04B25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E7858A827BF932D00A04B25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E7858AA27BF932D00A04B25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E7858AD27BF932D00A04B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E7858B027BF932D00A04B25 /* SpaceImage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpaceImage.xcdatamodel; sourceTree = "<group>"; };
 		3E7858B227BF933900A04B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E7858B527BF933900A04B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E7858B727BF933900A04B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7858BE27BF93D700A04B25 /* NasaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAPI.swift; sourceTree = "<group>"; };
+		3E7858C127BFB4CF00A04B25 /* SpaceObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceObject.swift; sourceTree = "<group>"; };
+		3E7858C427BFB67D00A04B25 /* SpaceObjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceObjectCell.swift; sourceTree = "<group>"; };
+		3E7858C727BFBF4800A04B25 /* SpaceObjectsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceObjectsTableViewController.swift; sourceTree = "<group>"; };
+		3E7858C927BFBF8500A04B25 /* InfoSpaceObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSpaceObjectViewController.swift; sourceTree = "<group>"; };
+		3E7858CB27BFC42900A04B25 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		B1FF7F6780F3DEEED9F18EBE /* Pods-SpaceImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceImage.release.xcconfig"; path = "Target Support Files/Pods-SpaceImage/Pods-SpaceImage.release.xcconfig"; sourceTree = "<group>"; };
+		C9DA46E122C3A1B770367056 /* Pods-SpaceImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceImage.debug.xcconfig"; path = "Target Support Files/Pods-SpaceImage/Pods-SpaceImage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7111887E7004320D3053ADCD /* Pods_SpaceImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,8 @@
 			children = (
 				3E7858A527BF932D00A04B25 /* SpaceImage */,
 				3E7858A427BF932D00A04B25 /* Products */,
+				F45D0549527A1E31E5D835BF /* Pods */,
+				8C8775E0DAB4C5582D975DE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +75,86 @@
 		3E7858A527BF932D00A04B25 /* SpaceImage */ = {
 			isa = PBXGroup;
 			children = (
-				3E7858A627BF932D00A04B25 /* AppDelegate.swift */,
-				3E7858A827BF932D00A04B25 /* SceneDelegate.swift */,
-				3E7858AA27BF932D00A04B25 /* ViewController.swift */,
-				3E7858AC27BF932D00A04B25 /* Main.storyboard */,
+				3EDBBAE527C0002900A02682 /* View */,
+				3E7858C327BFB65200A04B25 /* UI */,
+				3E7858C027BFB4BB00A04B25 /* Model */,
+				3E7858BD27BF936E00A04B25 /* NetworkManager */,
+				3EDBBAE627C0005500A02682 /* App */,
+				3E7858C627BFB6B700A04B25 /* Storyboard */,
 				3E7858B227BF933900A04B25 /* Assets.xcassets */,
-				3E7858B427BF933900A04B25 /* LaunchScreen.storyboard */,
 				3E7858B727BF933900A04B25 /* Info.plist */,
-				3E7858AF27BF932D00A04B25 /* SpaceImage.xcdatamodeld */,
+				3E7858AF27BF932D00A04B25 /* CoreData.xcdatamodeld */,
 			);
 			path = SpaceImage;
+			sourceTree = "<group>";
+		};
+		3E7858BD27BF936E00A04B25 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				3E7858BE27BF93D700A04B25 /* NasaAPI.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		3E7858C027BFB4BB00A04B25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E7858C127BFB4CF00A04B25 /* SpaceObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E7858C327BFB65200A04B25 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3E7858C427BFB67D00A04B25 /* SpaceObjectCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3E7858C627BFB6B700A04B25 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3E7858AC27BF932D00A04B25 /* Main.storyboard */,
+				3E7858B427BF933900A04B25 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3EDBBAE527C0002900A02682 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E7858C927BFBF8500A04B25 /* InfoSpaceObjectViewController.swift */,
+				3E7858C727BFBF4800A04B25 /* SpaceObjectsTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EDBBAE627C0005500A02682 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3E7858A627BF932D00A04B25 /* AppDelegate.swift */,
+				3E7858A827BF932D00A04B25 /* SceneDelegate.swift */,
+				3E7858CB27BFC42900A04B25 /* StorageManager.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8C8775E0DAB4C5582D975DE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				294C86E7A1F4A2569AB655AE /* Pods_SpaceImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F45D0549527A1E31E5D835BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA46E122C3A1B770367056 /* Pods-SpaceImage.debug.xcconfig */,
+				B1FF7F6780F3DEEED9F18EBE /* Pods-SpaceImage.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E7858BA27BF933900A04B25 /* Build configuration list for PBXNativeTarget "SpaceImage" */;
 			buildPhases = (
+				46743AE79E07FAE69957757D /* [CP] Check Pods Manifest.lock */,
 				3E78589F27BF932D00A04B25 /* Sources */,
 				3E7858A027BF932D00A04B25 /* Frameworks */,
 				3E7858A127BF932D00A04B25 /* Resources */,
+				E39DE151E7F23612ACCBF4A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -106,7 +195,7 @@
 				};
 			};
 			buildConfigurationList = 3E78589E27BF932D00A04B25 /* Build configuration list for PBXProject "SpaceImage" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -136,14 +225,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46743AE79E07FAE69957757D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceImage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E39DE151E7F23612ACCBF4A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceImage/Pods-SpaceImage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceImage/Pods-SpaceImage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpaceImage/Pods-SpaceImage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E78589F27BF932D00A04B25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E7858AB27BF932D00A04B25 /* ViewController.swift in Sources */,
 				3E7858A727BF932D00A04B25 /* AppDelegate.swift in Sources */,
-				3E7858B127BF932D00A04B25 /* SpaceImage.xcdatamodeld in Sources */,
+				3E7858BF27BF93D700A04B25 /* NasaAPI.swift in Sources */,
+				3E7858C527BFB67D00A04B25 /* SpaceObjectCell.swift in Sources */,
+				3E7858C227BFB4CF00A04B25 /* SpaceObject.swift in Sources */,
+				3E7858CA27BFBF8500A04B25 /* InfoSpaceObjectViewController.swift in Sources */,
+				3E7858C827BFBF4800A04B25 /* SpaceObjectsTableViewController.swift in Sources */,
+				3E7858CC27BFC42900A04B25 /* StorageManager.swift in Sources */,
+				3E7858B127BF932D00A04B25 /* CoreData.xcdatamodeld in Sources */,
 				3E7858A927BF932D00A04B25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -276,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,6 +424,7 @@
 		};
 		3E7858BB27BF933900A04B25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9DA46E122C3A1B770367056 /* Pods-SpaceImage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +438,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,12 +448,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3E7858BC27BF933900A04B25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1FF7F6780F3DEEED9F18EBE /* Pods-SpaceImage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,6 +468,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,7 +478,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -366,13 +506,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3E7858AF27BF932D00A04B25 /* SpaceImage.xcdatamodeld */ = {
+		3E7858AF27BF932D00A04B25 /* CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				3E7858B027BF932D00A04B25 /* SpaceImage.xcdatamodel */,
 			);
 			currentVersion = 3E7858B027BF932D00A04B25 /* SpaceImage.xcdatamodel */;
-			path = SpaceImage.xcdatamodeld;
+			path = CoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
